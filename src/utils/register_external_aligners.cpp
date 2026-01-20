@@ -30,7 +30,9 @@
 #include "register.hpp"
 
 void register_external_aligners(ExternalAlignerMap& external_aligners)
-{
+{  
+  // Register active force polar external alignment to the external align class factory
+  external_aligners["afpolar"] = factory<ExternalAFPolarAlignPtr>();
   // Register active jamming polar external alignment to the external align class factory
   external_aligners["ajpolar"] = factory<ExternalAJPolarAlignPtr>();
   // Register external alignment a vector filed to the external align class factory

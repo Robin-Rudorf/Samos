@@ -120,6 +120,7 @@
 #include "pair_vicsek_aligner.hpp"
 #include "pair_velocity_aligner.hpp"
 #include "external_aligner.hpp"
+#include "external_afpolar_aligner.hpp"
 #include "external_ajpolar_aligner.hpp"
 #include "external_field_aligner.hpp"
 #include "external_ajnematic_aligner.hpp"

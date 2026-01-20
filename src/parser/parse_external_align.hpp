@@ -62,6 +62,7 @@ public:
   {
     external_align = (
                        qi::as_string[keyword["gravity"]][phx::bind(&ExternalAlignData::type, phx::ref(external_align_data)) = qi::_1 ]  /*! Handles gravitational alignment */
+                     | qi::as_string[keyword["afpolar"]][phx::bind(&ExternalAlignData::type, phx::ref(external_align_data)) = qi::_1 ]       /*! Handles active force polar alignment */
                      | qi::as_string[keyword["ajpolar"]][phx::bind(&ExternalAlignData::type, phx::ref(external_align_data)) = qi::_1 ]       /*! Handles active jamming polar alignment */
                      | qi::as_string[keyword["ajnematic"]][phx::bind(&ExternalAlignData::type, phx::ref(external_align_data)) = qi::_1 ]       /*! Handles active jamming nematic alignment */
                      | qi::as_string[keyword["field"]][phx::bind(&ExternalAlignData::type, phx::ref(external_align_data)) = qi::_1 ]    /*! Handles alignment to external vector field */
