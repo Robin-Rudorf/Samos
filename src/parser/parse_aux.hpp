@@ -31,7 +31,7 @@
 #define __PARSE_AUX_HPP__
 
 #include <boost/spirit/include/qi.hpp>
-#include <boost/spirit/include/phoenix.hpp>
+#include <boost/phoenix.hpp>
 #include <boost/mpl/print.hpp>
 #include <boost/config/warning_disable.hpp>
 #include <boost/detail/lightweight_test.hpp>
